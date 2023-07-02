@@ -1,9 +1,11 @@
 // Uncomment the code below and write your tests
-// import { getBankAccount } from '.';
+import { getBankAccount } from '.';
 
 describe('BankAccount', () => {
   test('should create account with initial balance', () => {
-    // Write your test here
+    const sum = 30;
+    const balanse = getBankAccount(sum);
+    expect(balanse.getBalance()).toBe(sum);
   });
 
   test('should throw InsufficientFundsError error when withdrawing more than balance', () => {
