@@ -9,6 +9,8 @@ const testCases = [
     { a: 6, b: 2, action: Action.Divide, expected: 3 },
     { a: 3, b: 2, action: Action.Multiply, expected: 6 },
     { a: 3, b: 2, action: Action.Exponentiate, expected: 9 },
+    { a: undefined, b: 2, action: Action.Exponentiate, expected: null },
+    { a: 5, b: 2, action: 'multiply', expected: null },
 ];
 
 describe('simpleCalculator', () => {
